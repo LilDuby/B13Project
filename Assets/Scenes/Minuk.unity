@@ -638,6 +638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4181698832569567308, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
+      propertyPath: dropPosition
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5719475459365690319, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
       propertyPath: promptText
       value: 
