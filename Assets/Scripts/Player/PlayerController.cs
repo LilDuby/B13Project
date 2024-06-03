@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 mouseDelta;
 
     [Header("PickUp")]
-    public PickUp curPickUp;
+    public GameObject curPickUp;
     public Transform PickUpParent;
     public Transform dropPosition;
 
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
     public void PickUpNew(ItemData data)
     {
         ThrowPickUp();
-        curPickUp = Instantiate(data.PickUpPrefeb, PickUpParent).GetComponent<PickUp>();
+        curPickUp = Instantiate(data.PickUpPrefeb, PickUpParent);
     }
 
     public void OnThrow(InputAction.CallbackContext context)
