@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 80556288844871420}
   - component: {fileID: 8090354651973869281}
   m_Layer: 8
-  m_Name: PickUp_Test
+  m_Name: PickUp_Room1Key2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

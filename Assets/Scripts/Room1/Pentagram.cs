@@ -33,6 +33,7 @@ public class Pentagram : MonoBehaviour
         if (stack == 4)
         {
             room1.MissingWwall();
+            this.gameObject.SetActive(false);
         }
     }
 }
