@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0fcc799639964a94db54cd1f21433c64, type: 2}
+  m_sharedMaterial: {fileID: 8289619464844157728, guid: 0fcc799639964a94db54cd1f21433c64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -777,9 +777,11 @@ MonoBehaviour:
   minXLook: -85
   maxXLook: 85
   lookSensitivity: 0.1
+  canLook: 1
   curPickUp: {fileID: 0}
   PickUpParent: {fileID: 3296126314776391164}
   dropPosition: {fileID: 0}
+  keyPad: {fileID: 0}
 --- !u!114 &4550326546316969810
 MonoBehaviour:
   m_ObjectHideFlags: 0
