@@ -679,6 +679,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 881051470788852603, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.328
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484979915225731059, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.407
+      objectReference: {fileID: 0}
     - target: {fileID: 3002671982685743530, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -706,6 +714,14 @@ PrefabInstance:
     - target: {fileID: 4350047551245063075, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597604289824394226, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.877
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527482949790457832, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.658
       objectReference: {fileID: 0}
     - target: {fileID: 7851875000151911989, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,7 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkRate: 0.05
-  maxCheckDistance: 3
+  maxCheckDistance: 1.5
   layerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -948,7 +964,7 @@ Transform:
   m_GameObject: {fileID: 759235016798370023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.491, y: 0, z: -1.202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

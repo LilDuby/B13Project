@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9199fdf999197f741b198f9829579b43, type: 3}
   m_Name: Item_Room1Diary1
   m_EditorClassIdentifier: 
-  displayName: Diary
-  description: Someone's diary
+  displayName: "\uC77C\uAE30\uC7A5"
+  description: "\uB204\uAD70\uAC00\uC758 \uC77C\uAE30\uC7A5\uC774\uB2E4"
   type: 0
   dropPrefab: {fileID: 1100937681142754237, guid: 269c2c14276b52841a98c8327e803aca, type: 3}
   isKey: 0
