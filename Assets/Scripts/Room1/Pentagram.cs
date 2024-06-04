@@ -21,7 +21,7 @@ public class Pentagram : MonoBehaviour
             if (itemObject.data.isKey)
             {
                 Destroy(other.gameObject);
-                //audioSource.PlayOneShot(plusStackClip);
+                audioSource.PlayOneShot(plusStackClip);
                 PlusStack();
             }
         }

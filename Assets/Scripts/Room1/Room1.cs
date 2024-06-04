@@ -16,7 +16,7 @@ public class Room1 : MonoBehaviour
     public void MissingWwall()
     {
         Destroy(missingWall.gameObject);
-        //audioSource.PlayOneShot(MissingWallClip);
+        audioSource.PlayOneShot(MissingWallClip);
     }
 
 }
