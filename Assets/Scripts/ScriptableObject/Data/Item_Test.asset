@@ -16,4 +16,5 @@ MonoBehaviour:
   description: Test
   type: 0
   dropPrefab: {fileID: 8073499496869502439, guid: 40315f07ca0a6d347bad216c3826a4d7, type: 3}
+  isKey: 1
   PickUpPrefeb: {fileID: 5063308603210690013, guid: d2217d6e3edf9894fa3dffb02532d91e, type: 3}

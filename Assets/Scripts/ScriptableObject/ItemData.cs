@@ -19,6 +19,7 @@ public class ItemData : ScriptableObject
     public string description;
     public ItemType type;
     public GameObject dropPrefab;
+    public bool isKey;
 
     [Header("PickUp")]
     public GameObject PickUpPrefeb;
