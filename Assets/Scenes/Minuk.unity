@@ -671,6 +671,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 795333021692144245, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 795333021692144245, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002671982685743530, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002671982685743530, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_Color.b
+      value: 0.054467782
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002671982685743530, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_Color.g
+      value: 0.054467782
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002671982685743530, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_Color.r
+      value: 0.0754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653121521352596404, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047551245063075, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350047551245063075, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7851875000151911989, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -733,10 +769,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  jumpPower: 80
+  jumpPower: 50
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 183
+    m_Bits: 55
   cameraContainer: {fileID: 6226145305418823081}
   minXLook: -85
   maxXLook: 85
