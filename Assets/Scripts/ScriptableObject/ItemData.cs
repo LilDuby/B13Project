@@ -6,7 +6,9 @@ using UnityEngine;
 public enum ItemType
 {
     CanPickUp,
-    Resource
+    Resource,
+
+    Interaction
 }
 
 [CreateAssetMenu(fileName = "Item", menuName = "New Item")]

@@ -1,0 +1,52 @@
+using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class InputPad : MonoBehaviour
+{        
+    public GameObject keyPadUI;
+    public Image backgroud;
+    public TMP_InputField inputField;
+    public string password;
+    public bool success=false;
+
+    // public void OnKeyPadUI()
+    // {  
+    //     if(!success)
+    //     {
+    //         keyPadUI.SetActive(true);
+    //         PlayerManager.Instance.Player.controller.ToggleCursor();
+    //     }
+    // }
+    
+    public void OnPasswordChack()
+    {
+        if(password==inputField.ToString())
+        {
+            StartCoroutine(Success());
+        }
+        else
+        {
+            StartCoroutine(NoMatch());
+        }
+    }
+
+    IEnumerator Success()
+    {           
+        backgroud.color = Color.green;
+        yield return new WaitForSeconds(1.0f);        
+        success=true;
+        keyPadUI.SetActive(false);
+    }
+    IEnumerator NoMatch()
+    {   
+        Color BG=backgroud.color; 
+        backgroud.color = Color.red;
+        yield return new WaitForSeconds(1.0f);
+        inputField.text ="";
+        backgroud.color=BG;
+    }
+    
+}
