@@ -6,7 +6,9 @@ using UnityEngine;
 public enum ItemType
 {
     CanPickUp,
-    Resource
+    Resource,
+
+    Interaction
 }
 
 [CreateAssetMenu(fileName = "Item", menuName = "New Item")]
@@ -17,6 +19,7 @@ public class ItemData : ScriptableObject
     public string description;
     public ItemType type;
     public GameObject dropPrefab;
+    public bool isKey;
 
     [Header("PickUp")]
     public GameObject PickUpPrefeb;

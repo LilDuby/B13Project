@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private float camCurXRot;
     public float lookSensitivity;
     private Vector2 mouseDelta;
+    public bool canLook = true;
 
     [Header("PickUp")]
     public GameObject curPickUp;
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public Transform dropPosition;
 
     private Rigidbody _rigidbody;
+
+    public GameObject keyPad;
 
     private void Awake()
     {
@@ -46,7 +50,10 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        CameraLook();
+        if (canLook)
+        {
+            CameraLook();
+        }
     }
 
     void Move()
@@ -154,4 +161,20 @@ public class PlayerController : MonoBehaviour
     {
         Instantiate(data.dropPrefab, dropPosition.position, Quaternion.Euler(Vector3.forward));
     }
+
+    public void ToggleCursor()
+    {
+        bool toggle = Cursor.lockState == CursorLockMode.Locked;
+		Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+		canLook = !toggle;
+    }
+
+    public void OnKeyPad(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started)
+        {   
+            keyPad=PlayerManager.Instance.Player.interaction.curInteractGameObject;
+            
+        }
+    }    
 }
