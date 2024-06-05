@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Started && PlayerManager.Instance.Player.interaction.curInteractable != null && PlayerManager.Instance.Player.itemData == null)
         {
-            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnInteract();
+            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnInteract(); 
             if (isResource)
             {
                 PlayerManager.Instance.Player.interaction.curInteractGameObject = null;
@@ -179,11 +179,5 @@ public class PlayerController : MonoBehaviour
                 PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
             }
         }
-    }
-
-    public void SetOnKeyPad(ItemData data)
-    {
-        data.KeyPadUI.SetActive(true);
-        ToggleCursor();
-    }
+    }    
 }
