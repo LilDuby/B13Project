@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public Transform PickUpParent;
     public Transform dropPosition;
 
-    private Rigidbody _rigidbody;
+    public Rigidbody _rigidbody;
 
     public GameObject keyPad;
 
