@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    public Fall fall;
+    public AudioClip openDoorSound;
+    AudioSource audioSource;
 
     public GameObject password4;
 
@@ -13,14 +14,13 @@ public class OpenDoor : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    public void OpenDoorSituation()
     {
-        if (fall.openNum == 5)
-        {
-            animator.SetInteger("Open", 5);
-            password4.SetActive(true);
-        }
+        animator.SetInteger("Open", 5);
+        audioSource.PlayOneShot(openDoorSound);
+        password4.SetActive(true);
     }
 }

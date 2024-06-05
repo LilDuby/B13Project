@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9199fdf999197f741b198f9829579b43, type: 3}
   m_Name: Item_HintPad1
   m_EditorClassIdentifier: 
-  displayName: "\uCE74\uB4DC\uC758 \uBE60\uC9C4 \uC22B\uC790"
-  description: "\uC704\uC5D0\uC11C \uC544\uB798\uB85C 4\uAC1C"
+  displayName: "\uC704\uC758 \uD78C\uD2B8\uB97C \uBCF4\uACE0 "
+  description: "8\uC790\uB9AC \uC218\uB97C \uCC3E\uC73C\uC138\uC694"
   type: 1
   dropPrefab: {fileID: 0}
   isKey: 0
   PickUpPrefeb: {fileID: 0}
+  PadNum: 0

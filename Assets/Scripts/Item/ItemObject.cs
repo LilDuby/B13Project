@@ -7,6 +7,7 @@ public interface IInteractable
 {
     public string GetInteractPrompt();
     public bool OnInteract();
+    public bool OnClick();
 }
 
 public class ItemObject : MonoBehaviour, IInteractable
@@ -28,8 +29,12 @@ public class ItemObject : MonoBehaviour, IInteractable
             Destroy(gameObject);
             PlayerManager.Instance.Player.controller.PickUpNew(data);
             return true;
-        }
-        else if (data.type == ItemType.Interaction)
+        }        
+        return false;
+    }
+    public bool OnClick()
+    {
+        if (data.type == ItemType.Interaction)
         {
             PlayerManager.Instance.Player.itemData = data; 
             PlayerManager.Instance.Player.Interaction?.Invoke();
