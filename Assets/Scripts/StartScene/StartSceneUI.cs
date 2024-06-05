@@ -8,15 +8,17 @@ public class StartSceneUI : MonoBehaviour
     public GameObject title;
     public GameObject menuButton;
     public GameObject manualPanel;
-
+    public StareSceneButtonSound buttonSound;
 
     public void ClickStartButton()
     {
-        SceneManager.LoadScene("MainScene");
+        buttonSound.ButtonSound();
+        Invoke("LoadMainScene", 0.5f);
     }
 
     public void ClickManualButton()
     {
+        buttonSound.ButtonSound();
         menuButton.SetActive(false);
         title.SetActive(false);
         manualPanel.SetActive(true);
@@ -24,8 +26,14 @@ public class StartSceneUI : MonoBehaviour
 
     public void ClickManualCloseButton()
     {
+        buttonSound.ButtonSound();
         menuButton.SetActive(true);
         title.SetActive(true);
         manualPanel.SetActive(false);
+    }
+
+    void LoadMainScene()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
