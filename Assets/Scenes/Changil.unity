@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3949761306696984386, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 257464540}
     - target: {fileID: 7710821952353674061, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.33
@@ -248,6 +252,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &257464540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 527829156650697457, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
+  m_PrefabInstance: {fileID: 144120922815285093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2317378a87cf0a4f9126f70f1baaa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1581342151 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3949761306696984386, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
@@ -311,6 +326,10 @@ PrefabInstance:
       propertyPath: fall
       value: 
       objectReference: {fileID: 1581342151}
+    - target: {fileID: 527829156650697457, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
+      propertyPath: openDoorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4add8e04322fcec429d4f0244caebe8b, type: 3}
     - target: {fileID: 811589484266849346, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
       propertyPath: m_Name
       value: Class4
