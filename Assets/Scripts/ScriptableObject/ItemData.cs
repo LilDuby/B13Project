@@ -19,4 +19,7 @@ public class ItemData : ScriptableObject
 
     [Header("PickUp")]
     public GameObject PickUpPrefeb;
+
+    [Header("UI")]
+    public int PadNum;
 }

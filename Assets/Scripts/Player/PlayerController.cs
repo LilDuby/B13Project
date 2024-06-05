@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float lookSensitivity;
     private Vector2 mouseDelta;
     public bool canLook = true;
+    public GameObject keyPadUI;
 
     [Header("PickUp")]
     public GameObject curPickUp;
@@ -170,8 +171,9 @@ public class PlayerController : MonoBehaviour
     public void OnKeyPad(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started && PlayerManager.Instance.Player.interaction.curInteractable != null && PlayerManager.Instance.Player.itemData == null)
-        {
-            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnInteract(); 
+        {   
+            PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
+            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnInteract();            
             if (isResource)
             {
                 PlayerManager.Instance.Player.interaction.curInteractGameObject = null;
@@ -179,5 +181,6 @@ public class PlayerController : MonoBehaviour
                 PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
             }
         }
-    }    
+    } 
+
 }

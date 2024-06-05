@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 
 public class InputPad : MonoBehaviour
-{        
+{   
+    public int openNum=0;     
     public GameObject keyPadUI;
     public Image backgroud;
     public TMP_InputField inputField;
@@ -31,6 +32,7 @@ public class InputPad : MonoBehaviour
         success=true;
         keyPadUI.SetActive(false);
         PlayerManager.Instance.Player.controller.ToggleCursor();
+        openNum = 4;
     }
     IEnumerator NoMatch()
     {   

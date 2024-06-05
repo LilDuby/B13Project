@@ -1,8 +1,7 @@
 using UnityEngine;
 
 public class KeypadUI : MonoBehaviour
-{   
-    public GameObject keyPad;
+{       
     public GameObject keyPadUI;
 
     void Start()
@@ -11,8 +10,8 @@ public class KeypadUI : MonoBehaviour
     }
     public void OnKeyPadUI()
     {   
-        keyPad= PlayerManager.Instance.Player.interaction.curInteractGameObject;
         PlayerManager.Instance.Player.controller.ToggleCursor();
-        keyPadUI.SetActive(true);
-    }
+        keyPadUI.SetActive(true);                
+    }  
+      
 }
