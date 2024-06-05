@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,6 +7,8 @@ public class Player : MonoBehaviour
 
     public ItemData itemData;   
     public Action Interaction;
+    public Action Interaction2;
+    
 
     public Interaction interaction;
 

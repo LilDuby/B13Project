@@ -35,10 +35,17 @@ public class ItemObject : MonoBehaviour, IInteractable
     public bool OnClick()
     {
         if (data.type == ItemType.Interaction)
-        {
-            PlayerManager.Instance.Player.itemData = data; 
-            PlayerManager.Instance.Player.Interaction?.Invoke();
+        {   
+            if(data.PadNum==1)
+            {            
+                PlayerManager.Instance.Player.Interaction?.Invoke();
+                return true;
+            }
+            else
+            {
+                PlayerManager.Instance.Player.Interaction2?.Invoke();
             return true;
+            }
         }
         return false;
     }

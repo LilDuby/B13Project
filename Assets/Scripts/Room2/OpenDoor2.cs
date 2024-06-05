@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpenDoor1 : MonoBehaviour
+public class OpenDoor2 : MonoBehaviour
 {
     public InputPad inputPad;
     Animator animator;

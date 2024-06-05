@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -21,8 +17,7 @@ public class PlayerController : MonoBehaviour
     private float camCurXRot;
     public float lookSensitivity;
     private Vector2 mouseDelta;
-    public bool canLook = true;
-    public GameObject keyPadUI;
+    public bool canLook = true;    
 
     [Header("PickUp")]
     public GameObject curPickUp;
@@ -170,10 +165,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnKeyPad(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started && PlayerManager.Instance.Player.interaction.curInteractable != null && PlayerManager.Instance.Player.itemData == null)
+        if (context.phase == InputActionPhase.Started && PlayerManager.Instance.Player.interaction.curInteractable != null && canLook)
         {   
             PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
-            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnClick();            
+            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnClick();
             if (isResource)
             {
                 PlayerManager.Instance.Player.interaction.curInteractGameObject = null;
@@ -181,6 +176,5 @@ public class PlayerController : MonoBehaviour
                 PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
             }
         }
-    } 
-
+    }    
 }
