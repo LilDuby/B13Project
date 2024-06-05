@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorControllerEO : MonoBehaviour
+public class JumpRoomDoorController : MonoBehaviour
 {
     public float openAngle = 90f;
     public float rotationSpeed = 2f;
@@ -24,7 +24,7 @@ public class DoorControllerEO : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, openRotation, Time.deltaTime * rotationSpeed);
 
-            if(Quaternion.Angle(transform.rotation, openRotation) < 0.1f)
+            if (Quaternion.Angle(transform.rotation, openRotation) < 0.1f)
             {
                 transform.rotation = openRotation;
                 needRotate = false;
