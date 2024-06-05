@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+public class DoorControllerEO : MonoBehaviour
 {
     public float openAngle = 90f;
     public float rotationSpeed = 2f;
@@ -34,7 +34,7 @@ public class DoorController : MonoBehaviour
 
     }
 
-    public void StartRotate()
+    public void OpenDoor()
     {
         needRotate = true;
     }
