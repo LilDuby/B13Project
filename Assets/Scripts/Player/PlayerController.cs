@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
         if (context.phase == InputActionPhase.Started && PlayerManager.Instance.Player.interaction.curInteractable != null && PlayerManager.Instance.Player.itemData == null)
         {   
             PlayerManager.Instance.Player.interaction.promptText.gameObject.SetActive(false);
-            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnInteract();            
+            bool isResource = PlayerManager.Instance.Player.interaction.curInteractable.OnClick();            
             if (isResource)
             {
                 PlayerManager.Instance.Player.interaction.curInteractGameObject = null;

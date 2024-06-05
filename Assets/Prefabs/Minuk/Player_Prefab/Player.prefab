@@ -55,6 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910830d5dd6108e4fbecff1bd54403d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openDoor: {fileID: 0}
   openNum: 0
 --- !u!136 &350141050010697299
 CapsuleCollider:
@@ -212,7 +213,19 @@ MonoBehaviour:
     m_ActionId: 8daea56c-7ba6-46bc-8072-a0d93445d0a6
     m_ActionName: Player/Throw[/Keyboard/g]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4181698832569567308}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnKeyPad
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5270a531-44a0-4e2d-89d4-18682f000ee7
     m_ActionName: Player/Interaction[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
@@ -281,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   curInteractGameObject: {fileID: 0}
-  promptText: {fileID: 8614468829407589256}
+  promptText: {fileID: 0}
 --- !u!114 &4531058970725211269
 MonoBehaviour:
   m_ObjectHideFlags: 0
