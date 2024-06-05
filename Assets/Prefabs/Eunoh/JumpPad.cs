@@ -6,8 +6,6 @@ public class JumpPad : MonoBehaviour
 {
     public float padPower;
 
-    public JumpRoomDoorController doorController;
-
     private void Start()
     {
         
@@ -19,7 +17,6 @@ public class JumpPad : MonoBehaviour
         if (player != null)
         {
             player._rigidbody.AddForce(transform.up * padPower, ForceMode.Impulse);
-            doorController.CloseDoor();
         }
 
     }

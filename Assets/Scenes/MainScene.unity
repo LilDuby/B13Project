@@ -4476,17 +4476,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: JumpRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 1252001940309923913, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
+      propertyPath: padPower
+      value: 210
+      objectReference: {fileID: 0}
     - target: {fileID: 1643236254008069779, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1643236254008069779, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1643236254008069779, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
