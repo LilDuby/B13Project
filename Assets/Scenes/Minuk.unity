@@ -897,9 +897,11 @@ MonoBehaviour:
   maxXLook: 85
   lookSensitivity: 0.1
   canLook: 1
+  keyPadUI: {fileID: 0}
   curPickUp: {fileID: 0}
   PickUpParent: {fileID: 6517575371634434505}
   dropPosition: {fileID: 0}
+  _rigidbody: {fileID: 0}
 --- !u!1 &6189040259138559360
 GameObject:
   m_ObjectHideFlags: 0
