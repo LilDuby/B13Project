@@ -6,7 +6,7 @@ public class OpenDoor : MonoBehaviour
 {
     public Fall fall;
 
-    //public GameObject Door;
+    public GameObject password4;
 
     Animator animator;
 
@@ -20,15 +20,7 @@ public class OpenDoor : MonoBehaviour
         if (fall.openNum == 5)
         {
             animator.SetInteger("Open", 5);
+            password4.SetActive(true);
         }
     }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "OpenFloor")
-    //    {
-    //        //Door.transform.rotation = Quaternion.Euler(new Vector3(0f, 80f, 0f));
-    //        animator.SetInteger("Open", 5);
-    //    }
-    //}
 }
