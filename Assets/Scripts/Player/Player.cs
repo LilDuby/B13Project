@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     public PlayerController controller;
 
     public ItemData itemData;
-    public Action PickUpItem;    
+    public Action PickUpItem;
+    public Action Interaction;
 
     public Interaction interaction;
 

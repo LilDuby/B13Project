@@ -11,15 +11,6 @@ public class InputPad : MonoBehaviour
     public TMP_InputField inputField;
     public string password;
     public bool success=false;
-
-    // public void OnKeyPadUI()
-    // {  
-    //     if(!success)
-    //     {
-    //         keyPadUI.SetActive(true);
-    //         PlayerManager.Instance.Player.controller.ToggleCursor();
-    //     }
-    // }
     
     public void OnPasswordChack()
     {
