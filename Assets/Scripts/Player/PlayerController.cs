@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     public Transform PickUpParent;
     public Transform dropPosition;
 
-    public Rigidbody _rigidbody;    
+    public Rigidbody _rigidbody;
 
     private void Awake()
     {
