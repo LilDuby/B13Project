@@ -7,8 +7,6 @@ public class OpenDoor : MonoBehaviour
     public AudioClip openDoorSound;
     AudioSource audioSource;
 
-    public Fall fall;
-
     public GameObject password4;
 
     Animator animator;
@@ -16,20 +14,13 @@ public class OpenDoor : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-    }
-
-    private void Start()
-    {
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    public void OpenDoorSituation()
     {
-        if (fall.openNum == 5)
-        {
-            audioSource.PlayOneShot(openDoorSound);
-            animator.SetInteger("Open", 5);
-            password4.SetActive(true);
-        }
+        animator.SetInteger("Open", 5);
+        audioSource.PlayOneShot(openDoorSound);
+        password4.SetActive(true);
     }
 }
