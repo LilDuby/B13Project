@@ -180,10 +180,4 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
-    public void SetOnKeyPad(ItemData data)
-    {
-        data.KeyPadUI.SetActive(true);
-        ToggleCursor();
-    }
 }

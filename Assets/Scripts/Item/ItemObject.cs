@@ -24,8 +24,7 @@ public class ItemObject : MonoBehaviour, IInteractable
     {
         if (data.type == ItemType.CanPickUp)
         {
-            PlayerManager.Instance.Player.itemData = data;
-            PlayerManager.Instance.Player.PickUpItem?.Invoke();
+            PlayerManager.Instance.Player.itemData = data;           
             Destroy(gameObject);
             PlayerManager.Instance.Player.controller.PickUpNew(data);
             return true;
@@ -34,7 +33,6 @@ public class ItemObject : MonoBehaviour, IInteractable
         {
             PlayerManager.Instance.Player.itemData = data;
             PlayerManager.Instance.Player.Interaction?.Invoke();
-            PlayerManager.Instance.Player.controller.SetOnKeyPad(data);
             return true;
         }
         return false;
