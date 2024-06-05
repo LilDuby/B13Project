@@ -11,12 +11,12 @@ public class JumpPad : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-        if (player != null)
-        {
-            player._rigidbody.AddForce(transform.up * padPower, ForceMode.Impulse);
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+    //    if (player != null)
+    //    {
+    //        player._rigidbody.AddForce(transform.up * padPower, ForceMode.Impulse);
+    //    }
+    //}
 }
