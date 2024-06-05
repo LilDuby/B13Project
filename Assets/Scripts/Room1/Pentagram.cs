@@ -21,7 +21,7 @@ public class Pentagram : MonoBehaviour
             if (itemObject.data.isKey)
             {
                 Destroy(other.gameObject);
-                //audioSource.PlayOneShot(plusStackClip);
+                audioSource.PlayOneShot(plusStackClip);
                 PlusStack();
             }
         }
@@ -33,6 +33,7 @@ public class Pentagram : MonoBehaviour
         if (stack == 4)
         {
             room1.MissingWwall();
+            this.gameObject.SetActive(false);
         }
     }
 }
