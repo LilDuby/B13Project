@@ -31,7 +31,7 @@ public class ItemObject : MonoBehaviour, IInteractable
         }
         else if (data.type == ItemType.Interaction)
         {
-            PlayerManager.Instance.Player.itemData = data;
+            PlayerManager.Instance.Player.itemData = data; 
             PlayerManager.Instance.Player.Interaction?.Invoke();
             return true;
         }
