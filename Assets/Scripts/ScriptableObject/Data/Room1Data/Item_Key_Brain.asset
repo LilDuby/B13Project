@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9199fdf999197f741b198f9829579b43, type: 3}
-  m_Name: Item_Room1key1
+  m_Name: Item_Key_Brain
   m_EditorClassIdentifier: 
-  displayName: Key1
-  description: Key1Item
+  displayName: "\uB1CC"
+  description: "\uBC29\uAE08\uAE4C\uC9C0 \uBA38\uB9AC\uC548\uC5D0 \uC788\uB358 \uAC83
+    \uAC19\uC740 \uB1CC\uC774\uB2E4."
   type: 0
-  dropPrefab: {fileID: 8073499496869502439, guid: 40315f07ca0a6d347bad216c3826a4d7, type: 3}
+  dropPrefab: {fileID: 933135578308631085, guid: 4b84980c4175d9d4d88d502815cf944c, type: 3}
   isKey: 1
-  PickUpPrefeb: {fileID: 5063308603210690013, guid: 8739fab26f9d23448b183e42b8843e01, type: 3}
+  PickUpPrefeb: {fileID: 2179134351830533927, guid: b8bf32db144d16d4688952656d21bbaa, type: 3}
