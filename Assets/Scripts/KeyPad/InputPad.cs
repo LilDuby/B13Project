@@ -13,8 +13,8 @@ public class InputPad : MonoBehaviour
     public bool success=false;
     
     public void OnPasswordChack()
-    {
-        if(password==inputField.ToString())
+    {        
+        if(password==inputField.text.ToString())
         {
             StartCoroutine(Success());
         }
@@ -27,9 +27,10 @@ public class InputPad : MonoBehaviour
     IEnumerator Success()
     {           
         backgroud.color = Color.green;
-        yield return new WaitForSeconds(1.0f);        
+        yield return new WaitForSeconds(1.0f);
         success=true;
         keyPadUI.SetActive(false);
+        PlayerManager.Instance.Player.controller.ToggleCursor();
     }
     IEnumerator NoMatch()
     {   
@@ -38,6 +39,5 @@ public class InputPad : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         inputField.text ="";
         backgroud.color=BG;
-    }
-    
+    }    
 }
