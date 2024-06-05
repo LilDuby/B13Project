@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Fall : MonoBehaviour
 {
+    public OpenDoor openDoor;
+
     public int openNum = 0;
 
     private void OnCollisionEnter(Collision collision)
@@ -16,6 +18,7 @@ public class Fall : MonoBehaviour
         else if (collision.gameObject.tag == "OpenFloor")
         {
             openNum = 5;
+            openDoor.OpenDoorSituation();
         }
     }
 }
