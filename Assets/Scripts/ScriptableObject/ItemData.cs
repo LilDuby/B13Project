@@ -1,14 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public enum ItemType
 {
     CanPickUp,
     Resource,
-
     Interaction
 }
 
@@ -24,7 +19,4 @@ public class ItemData : ScriptableObject
 
     [Header("PickUp")]
     public GameObject PickUpPrefeb;
-
-    [Header("UI")]
-    public GameObject KeyPadUI;
 }
