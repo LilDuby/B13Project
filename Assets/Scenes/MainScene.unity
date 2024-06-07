@@ -6168,6 +6168,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6797043309858331433, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1782746212}
+    - target: {fileID: 6797043309858331433, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleCursor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11037,6 +11045,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
+--- !u!114 &1782746212 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4181698832569567308, guid: 6617ba4480685c74b94e50b43864e133, type: 3}
+  m_PrefabInstance: {fileID: 1782746211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a2f22848fc42d44b27a267c68f5095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1788068334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11743,6 +11762,14 @@ PrefabInstance:
     - target: {fileID: 4976070169363818088, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
       propertyPath: m_Name
       value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341541481295147332, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1782746212}
+    - target: {fileID: 5341541481295147332, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleCursor
       objectReference: {fileID: 0}
     - target: {fileID: 6201440149476784860, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
       propertyPath: m_LocalPosition.x
