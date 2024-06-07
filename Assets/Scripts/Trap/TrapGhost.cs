@@ -47,7 +47,7 @@ public class TrapGhost : MonoBehaviour
     void MoveGhost()
     {
         count++;
-        transform.position += new Vector3(0, 0, 0.2f);
+        transform.position += new Vector3(-0.2f, 0, 0);
         if(count == soundCount)
         {
             audioSource.PlayOneShot(trapClip);

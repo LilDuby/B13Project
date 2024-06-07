@@ -14,11 +14,11 @@ public class TrapBlockRoadCollider : MonoBehaviour
         {
             if (right)
             {
-                _rigidbody.AddForce(Vector3.right * blockSpeed, ForceMode.Impulse);
+                _rigidbody.AddForce(Vector3.back * blockSpeed, ForceMode.Impulse);
             }
             else
             {
-                _rigidbody.AddForce(Vector3.left * blockSpeed, ForceMode.Impulse);
+                _rigidbody.AddForce(Vector3.forward * blockSpeed, ForceMode.Impulse);
             }
         }
     }
