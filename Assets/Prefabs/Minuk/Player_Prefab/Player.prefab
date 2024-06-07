@@ -271,7 +271,6 @@ MonoBehaviour:
   maxXLook: 85
   lookSensitivity: 0.1
   canLook: 1
-  keyPadUI: {fileID: 0}
   curPickUp: {fileID: 0}
   PickUpParent: {fileID: 3296126313637631839}
   dropPosition: {fileID: 0}
