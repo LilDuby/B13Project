@@ -158,7 +158,9 @@ public class PlayerController : MonoBehaviour
 
     public void ToggleCursor()
     {        
-		Cursor.lockState = canLook ? CursorLockMode.Locked : CursorLockMode.None;		
+		bool toggle = Cursor.lockState == CursorLockMode.Locked;
+		Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+		canLook = !toggle;		
     }
 
     public void OnKeyPad(InputAction.CallbackContext context)
