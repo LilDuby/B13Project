@@ -157,10 +157,10 @@ public class PlayerController : MonoBehaviour
     }
 
     public void ToggleCursor()
-    {
-        bool toggle = Cursor.lockState == CursorLockMode.Locked;
+    {        
+		bool toggle = Cursor.lockState == CursorLockMode.Locked;
 		Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
-		canLook = !toggle;
+		canLook = !toggle;		
     }
 
     public void OnKeyPad(InputAction.CallbackContext context)
