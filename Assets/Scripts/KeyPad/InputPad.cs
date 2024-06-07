@@ -11,7 +11,9 @@ public class InputPad : MonoBehaviour
     public TMP_InputField inputField;
     public string password;
     public bool success=false;
-    
+
+    public DoorOpenSound sound;
+
     public void OnPasswordChack()
     {        
         if(password==inputField.text.ToString())
@@ -31,6 +33,7 @@ public class InputPad : MonoBehaviour
         success=true;
         keyPadUI.SetActive(false);
         PlayerManager.Instance.Player.controller.ToggleCursor();
+        sound.OpenSound();
     }
     IEnumerator NoMatch()
     {   
