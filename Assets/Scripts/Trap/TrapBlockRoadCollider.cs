@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TrapBlockRoadCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int blockSpeed;
+    public bool right;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+
+        if(other.TryGetComponent(out Rigidbody _rigidbody))
+        {
+            if (right)
+            {
+                _rigidbody.AddForce(Vector3.right * blockSpeed, ForceMode.Impulse);
+            }
+            else
+            {
+                _rigidbody.AddForce(Vector3.left * blockSpeed, ForceMode.Impulse);
+            }
+        }
     }
 }

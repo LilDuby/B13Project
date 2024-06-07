@@ -21,13 +21,16 @@ public class TrapBlockRoad : MonoBehaviour
     {
         if(other.GetComponent<Player>() != null)
         {
-            leftCollider.gameObject.SetActive(true);
-            rightCollider.gameObject.SetActive(true);
+            leftCollider.SetActive(true);
+            rightCollider.SetActive(true);
+            PlayBlockClip();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
+        leftCollider.SetActive(false);
+        rightCollider.SetActive(false);
         Destroy(boxCollider);
     }
 
