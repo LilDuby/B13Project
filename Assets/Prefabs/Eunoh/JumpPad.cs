@@ -18,5 +18,6 @@ public class JumpPad : MonoBehaviour
         {
             player._rigidbody.AddForce(transform.up * padPower, ForceMode.Impulse);
         }
+
     }
 }

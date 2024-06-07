@@ -334,22 +334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JumpRoom
       objectReference: {fileID: 0}
-    - target: {fileID: 7897997603723254799, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7897997603723254799, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7279938512165644344, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3575457259732625343, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
 --- !u!54 &1875987194 stripped
 Rigidbody:
