@@ -30,7 +30,7 @@ public class InputPad : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         success=true;
         keyPadUI.SetActive(false);
-        PlayerManager.Instance.Player.controller.ToggleCursor();        
+        PlayerManager.Instance.Player.controller.ToggleCursor();
     }
     IEnumerator NoMatch()
     {   
