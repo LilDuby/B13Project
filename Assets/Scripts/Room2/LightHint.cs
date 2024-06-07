@@ -6,9 +6,17 @@ public class LightHint : MonoBehaviour
     public Light light;
     public bool isTrigger=false;
 
+    public AudioClip onSound;
+    AudioSource audioSource;
+
     private void Start()
     {
         light = GetComponentInChildren<Light>();
+        audioSource = GetComponent<AudioSource>();
+    }
+    public void OnSound()
+    {
+        audioSource.PlayOneShot(onSound);
     }
     public void OnTriggerEnter(Collider other)
     {  
@@ -30,12 +38,13 @@ public class LightHint : MonoBehaviour
         };
         //Debug.Log("light ON");
         light.enabled = true;
+        OnSound();
 
         for (int i = 0;i < 5; i ++)
         {                                    
             if(i!=4)
             {   
-                light.color=color[i];                
+                light.color=color[i];
             }
             else
             {
