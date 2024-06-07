@@ -5781,6 +5781,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5547406222978499985, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5547406222978499985, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.7764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5547406222978499985, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5547406222978499985, guid: a8e8f3dccdd1e384787b6f2f89c7ac07, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4291231488
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6544,7 +6560,7 @@ GameObject:
   - component: {fileID: 1115632144}
   - component: {fileID: 1115632143}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6630,11 +6646,11 @@ Transform:
   m_GameObject: {fileID: 1115632142}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 13, y: 2.8, z: -59.2}
+  m_LocalPosition: {x: -2.3944178, y: -2.7667043, z: -57.424404}
   m_LocalScale: {x: 5.6, y: 4.2, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1744662405}
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!1001 &1137306365
 PrefabInstance:
@@ -8203,6 +8219,10 @@ PrefabInstance:
     - target: {fileID: 811589484266849346, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
       propertyPath: m_Name
       value: Class4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574578020725507434, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9944,6 +9964,7 @@ Transform:
   - {fileID: 1037080939}
   - {fileID: 1851895712}
   - {fileID: 1337511668}
+  - {fileID: 1115632146}
   m_Father: {fileID: 836636965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1744863054
@@ -12582,5 +12603,4 @@ SceneRoots:
   - {fileID: 1211081234}
   - {fileID: 511861076}
   - {fileID: 1346240209}
-  - {fileID: 1115632146}
   - {fileID: 911806212}
