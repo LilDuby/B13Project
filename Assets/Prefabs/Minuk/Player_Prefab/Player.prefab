@@ -294,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   curInteractGameObject: {fileID: 0}
-  promptText: {fileID: 0}
+  promptText: {fileID: 8614468829407589256}
 --- !u!114 &4531058970725211269
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,18 +5,16 @@ using UnityEngine;
 public class JumpRoomButton : MonoBehaviour
 {
     public JumpRoomButtonData buttonData;
-    public JumpRoomDoorController doorController;
+    public GameObject keyNumber;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (buttonData.buttonType == ButtonType.Right)
         {
-            Debug.Log("Right");
-            doorController.OpenDoor();
+            keyNumber.SetActive(true);
         }
         else
         {
-            Debug.Log("Wrong");
             return;
         }
     }
