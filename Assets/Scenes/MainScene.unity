@@ -6560,7 +6560,7 @@ GameObject:
   - component: {fileID: 1115632144}
   - component: {fileID: 1115632143}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6646,11 +6646,11 @@ Transform:
   m_GameObject: {fileID: 1115632142}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 13, y: 2.8, z: -59.2}
+  m_LocalPosition: {x: -2.3944178, y: -2.7667043, z: -57.424404}
   m_LocalScale: {x: 5.6, y: 4.2, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1744662405}
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!1001 &1137306365
 PrefabInstance:
@@ -9964,6 +9964,7 @@ Transform:
   - {fileID: 1037080939}
   - {fileID: 1851895712}
   - {fileID: 1337511668}
+  - {fileID: 1115632146}
   m_Father: {fileID: 836636965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1744863054
@@ -12602,5 +12603,4 @@ SceneRoots:
   - {fileID: 1211081234}
   - {fileID: 511861076}
   - {fileID: 1346240209}
-  - {fileID: 1115632146}
   - {fileID: 911806212}
