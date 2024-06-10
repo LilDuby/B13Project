@@ -12,6 +12,7 @@ public class Trigger : MonoBehaviour
 
     public void EndGame()
     {
+        PlayerManager.Instance.Player.controller.ToggleCursor();
         SceneManager.LoadScene("EndingScene");
     }   
 }
