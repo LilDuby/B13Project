@@ -12,7 +12,7 @@ public class Trigger : MonoBehaviour
 
     public void EndGame()
     {
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene("EndingScene");
     }   
 }
 

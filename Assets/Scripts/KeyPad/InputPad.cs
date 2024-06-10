@@ -27,7 +27,7 @@ public class InputPad : MonoBehaviour
     }
 
     IEnumerator Success()
-    {           
+    {   
         backgroud.color = Color.green;
         yield return new WaitForSeconds(1.0f);
         success=true;
@@ -42,5 +42,9 @@ public class InputPad : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         inputField.text ="";
         backgroud.color=BG;
-    }    
+    } 
+    public void passwordReset()
+    {
+        inputField.text="Password";
+    }  
 }
