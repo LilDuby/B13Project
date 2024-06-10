@@ -7684,7 +7684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1077515060267879420, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
       propertyPath: m_Name
-      value: JumpRoom
+      value: Room3
       objectReference: {fileID: 0}
     - target: {fileID: 4531513010782247540, guid: ea2bf9da377651b4ab5e7cf97bd2304d, type: 3}
       propertyPath: openRoom4Door
@@ -8999,7 +8999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 811589484266849346, guid: 3bfeb4f58f9e6a2408f5fa486bceb3a1, type: 3}
       propertyPath: m_Name
-      value: Class4
+      value: Room4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10287,7 +10287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9124209501266729163, guid: 76067ba0cecc21240acf95cf43dd84de, type: 3}
       propertyPath: m_Name
-      value: Room_ Minuk
+      value: Room1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12022,7 +12022,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4976070169363818088, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
       propertyPath: m_Name
-      value: Room
+      value: Room2
       objectReference: {fileID: 0}
     - target: {fileID: 5341541481295147332, guid: 46cc30f860fb01b48b8f7fde85ea9817, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
